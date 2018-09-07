@@ -26,6 +26,9 @@ body{
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  position: relative;
+  z-index: -2;
+  background: rgba(190, 190, 190, 0.5);
 }
 .page{
   display: flex;
@@ -52,6 +55,7 @@ body{
   position: fixed;
   top:0;
   left: 0;
+  z-index: 2;
 }
 
 .page .pointer{
@@ -156,7 +160,7 @@ body{
   width: 38.5vw;
   margin-top: 1em;
   text-align: center;
-  border: 1px solid #6391D2;
+  border: 1px solid #78B6BD;
   background: transparent;
   padding: 2vw;
   color: inherit;
