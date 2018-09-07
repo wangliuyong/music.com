@@ -31,7 +31,10 @@
     },
     play(){
       let audio=$(this.el).find('audio')[0]
-      audio.play()
+      audio.oncanplay=()=>{
+        audio.play()
+      }
+      
       $(this.el).find('#play').removeClass('active')
       $(this.el).find('.disc-wrap').removeClass('pause').addClass('play')
 
