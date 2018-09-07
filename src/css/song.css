@@ -168,6 +168,7 @@ body{
   border-radius: 5vw;
   letter-spacing: 1vw;
   margin: 1em;
+  box-shadow: 0 0 2px 1px #aaa;
 }
 
 .link a.download{background: #78B6BD;}
