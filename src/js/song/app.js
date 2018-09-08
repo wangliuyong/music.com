@@ -21,7 +21,7 @@
 
       arr.map((string)=>{
         let p=$('<p></p>')
-        let times=string.substr(1,8).split(':')
+        let times=string.substr(1,8).split(':')//更改sbustr应该为substring()/slice()
         let minutes=times[0]-0
         let seconds=times[1]-0
         let time=minutes*60+seconds
@@ -66,7 +66,7 @@
 
             let pHeight=$p[i].getBoundingClientRect().top
            
-            let lyHeight=$(this.el).find('.lyricWrap')[0].getBoundingClientRect().top
+            let lyHeight=$(this.el).find('.lyricWrap')[0].getBoundingClientRect().top//到视口顶部的距离
             
             height=pHeight-lyHeight
           
@@ -74,6 +74,7 @@
               transform:`translateY(${-height+25}px)`,
             })
             $p.eq(i).addClass('active').siblings('.active').removeClass('active')
+            console.log(i)
             break
           }
         }
